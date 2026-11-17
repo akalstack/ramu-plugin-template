@@ -1,0 +1,28 @@
+{
+  "$schema": "https://getramu.dev/schema/plugin.json",
+  "name": "my-plugin",
+  "version": "0.1.0",
+  "description": "What my-plugin lets an agent do, in one sentence.",
+  "author": {
+    "name": "Your name"
+  },
+  "license": "MIT",
+  "extensions": {
+    "dev.getramu": {
+      "credentials": [
+        {
+          "id": "token",
+          "label": "my-plugin API token",
+          "env": "MY_PLUGIN_TOKEN",
+          "kind": "token",
+          "page": "https://example.com/account/tokens",
+          "scope": "Read and deploy"
+        }
+      ],
+      "stacks": [],
+      "keywords": [
+        "my-plugin"
+      ]
+    }
+  }
+}
